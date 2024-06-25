@@ -14,6 +14,6 @@ CREATE TABLE if not exists event_sponsor (
     sponsorId INT,
     eventId INT,
     PRIMARY KEY (sponsorId, eventId),
-    FOREIGN KEY (sponsorId) REFERENCES sponsor(sponsorId),
-    FOREIGN KEY (eventId) REFERENCES event(eventId)
+    FOREIGN KEY (sponsorId) REFERENCES sponsor(id),
+    FOREIGN KEY (eventId) REFERENCES event(id)
 );
